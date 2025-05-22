@@ -4,6 +4,10 @@ const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const path = require('path');
     
+const PORT = process.env.PORT || 3000;
+
+
+
 const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -118,4 +122,7 @@ app.post('/generate', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
