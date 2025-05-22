@@ -1,0 +1,117 @@
+/* Background layers */
+.bg-layer {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  /* Base styling */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Container with white translucent background */
+  .container {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(139, 0, 0, 0.4);
+    color: #2c3e50;
+  }
+  
+  /* Heading style */
+  h1 {
+    text-align: center;
+    color: #8B0000;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(178, 34, 34, 0.6);
+    letter-spacing: 1.5px;
+  }
+  
+  /* Form layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Fieldset styles */
+  fieldset {
+    border: 2px solid #B22222;
+    border-radius: 12px;
+    padding: 25px 30px;
+    background: #fff0f0;
+    box-shadow: 0 0 10px rgba(178, 34, 34, 0.15);
+  }
+  
+  legend {
+    padding: 0 12px;
+    font-weight: 700;
+    color: #B22222;
+    font-size: 1.2rem;
+  }
+  
+  /* Form row for 2-column layout */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-row label {
+    flex: 1 1 48%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #8B0000;
+  }
+  
+  /* Input and select */
+  input, select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #B22222;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #8B0000;
+    box-shadow: 0 0 6px rgba(139, 0, 0, 0.6);
+    background: #fff6f6;
+  }
+  
+  /* Button */
+  button {
+    background: #B22222;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    align-self: center;
+    width: 65%;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #8B0000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.7);
+  }
+  
